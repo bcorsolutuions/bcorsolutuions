@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(not exist *)",
+      "Bash(mkdir -p \"D:/bcorwebsite/.claude\")",
+      "Bash(Get-ChildItem -Path \"D:\\\\bcorwebsite\" -Recurse -Filter \"*.env*\" -ErrorAction SilentlyContinue)",
+      "Bash(Select-Object -ExpandProperty FullName)"
+    ]
+  }
+}
