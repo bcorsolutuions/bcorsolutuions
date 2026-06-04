@@ -26,7 +26,7 @@ export default function ContactPage() {
       phoneTitle: 'Phone',
       addressTitle: 'Address',
       phone: '+97377086230',
-      email: 'info@company.com',
+      email: 'info@bcorsolutions.com',
       address: 'BMB tower, diplomatic area, Manama, Bahrain'
 
                                                                                        
