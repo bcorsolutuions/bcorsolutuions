@@ -25,9 +25,11 @@ export default function ContactPage() {
       emailTitle: 'Email',
       phoneTitle: 'Phone',
       addressTitle: 'Address',
-      phone: '+1 (555) 123-4567',
+      phone: '+97377086230',
       email: 'info@company.com',
-      address: '123 Business Street\nSuite 100\nCity, State 12345'
+      address: 'BMB tower, diplomatic area, Manama, Bahrain'
+
+                                                                                       
     },
     ar: {
       title: 'تواصل معنا',
@@ -43,9 +45,9 @@ export default function ContactPage() {
       emailTitle: 'البريد الإلكتروني',
       phoneTitle: 'الهاتف',
       addressTitle: 'العنوان',
-      phone: '+1 (555) 123-4567',
-      email: 'info@company.com',
-      address: '123 شارع الأعمال\nالجناح 100\nالمدينة، الولاية 12345'
+      phone: '+97377086230',
+      email: 'info@bcorsolutions.com',
+      address: 'BMB tower, diplomatic area, Manama, Bahrain'
     }
   };
 
