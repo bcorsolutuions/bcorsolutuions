@@ -4,6 +4,7 @@ import { useLanguage } from '@/lib/language-context';
 import { t } from '@/lib/translations';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
+import { SplashHeroSection } from '@/components/sections/splash-hero-section';
 import { HeroSection } from '@/components/sections/hero-section';
 import { FeaturesSection } from '@/components/sections/features-section';
 import { SolutionsSection } from '@/components/sections/solutions-section';
@@ -18,6 +19,7 @@ export default function Home() {
 
   return (
     <div className={cn("min-h-screen", isRTL ? "font-cairo" : "")}>
+      <SplashHeroSection />
       <HeroSection
         description={{
           en: 'Unlock seamless efficiency and innovation across diverse industries with BCor Solutions—an all-in-one ERP software tailored for comprehensive management of HR, fixed assets, trading, manufacturing, and beyond.',

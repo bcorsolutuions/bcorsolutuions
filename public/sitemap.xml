@@ -1,42 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Core pages -->
-  <url><loc>https://bcorsolutions.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://bcorsolutions.com/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://bcorsolutions.com/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bcorsolutions.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.bcorsolutions.com/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.bcorsolutions.com/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- Modules index -->
-  <url><loc>https://bcorsolutions.com/modules</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/modules</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Module pages -->
-  <url><loc>https://bcorsolutions.com/modules/finance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/modules/trading</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/modules/inventory</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/modules/hcm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/modules/projects</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/modules/production</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/modules/fixed-assets</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/modules/crm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/modules/property</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/modules/ready-mix</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/modules/healthcare</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/modules/automotive</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/modules/finance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/modules/trading</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/modules/inventory</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/modules/hcm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/modules/projects</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/modules/production</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/modules/fixed-assets</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/modules/crm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/modules/property</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/modules/ready-mix</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/modules/healthcare</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/modules/automotive</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
   <!-- Industry solutions -->
-  <url><loc>https://bcorsolutions.com/solutions/healthcare</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://bcorsolutions.com/solutions/restaurant</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://bcorsolutions.com/solutions/van-sales</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://bcorsolutions.com/solutions/wms</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://bcorsolutions.com/solutions/workshop</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://bcorsolutions.com/solutions/pos</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://bcorsolutions.com/solutions/logistics</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://bcorsolutions.com/solutions/readymix</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://bcorsolutions.com/solutions/trading</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/solutions/crm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/solutions/hcm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/solutions/finance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/solutions/projects</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://bcorsolutions.com/solutions/fixed-asset</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/solutions/healthcare</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bcorsolutions.com/solutions/restaurant</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bcorsolutions.com/solutions/van-sales</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bcorsolutions.com/solutions/wms</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bcorsolutions.com/solutions/workshop</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bcorsolutions.com/solutions/pos</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bcorsolutions.com/solutions/logistics</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bcorsolutions.com/solutions/readymix</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.bcorsolutions.com/solutions/trading</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/solutions/crm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/solutions/hcm</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/solutions/finance</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/solutions/projects</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.bcorsolutions.com/solutions/fixed-asset</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
 </urlset>

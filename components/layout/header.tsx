@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { Menu, X, Moon, Sun, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
@@ -26,15 +27,21 @@ export function Header() {
   const [demoOpen, setDemoOpen] = useState(false);
   const { theme, setTheme } = useTheme();
   const { language, setLanguage, isRTL } = useLanguage();
+  const pathname = usePathname();
+  const isHome = pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      const threshold = isHome ? window.innerHeight - 100 : 10;
+      setIsScrolled(window.scrollY > threshold);
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isHome]);
+
+  const transparent = isHome && !isScrolled;
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
@@ -85,7 +92,9 @@ export function Header() {
     <header
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
-        isScrolled
+        transparent
+          ? "bg-transparent text-white"
+          : isScrolled
           ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-sm"
           : "bg-[#0f172a]/80 backdrop-blur-sm text-white"
       )}
@@ -107,7 +116,11 @@ export function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-6">
-            <NavigationMenu>
+            <NavigationMenu
+              className={cn(
+                transparent && "rounded-full border border-white/30 bg-white/[0.13] px-3 py-1.5 backdrop-blur-sm shadow-[inset_0_1px_0_rgba(255,255,255,0.15)]"
+              )}
+            >
               <NavigationMenuList>
                 {navItems.map((item) => (
                   <NavigationMenuItem key={item.key} className={item.key === 'nav.contact' ? 'ml-6' : ''}>

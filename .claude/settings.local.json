@@ -5,7 +5,8 @@
       "Bash(mkdir -p \"D:/bcorwebsite/.claude\")",
       "Bash(Get-ChildItem -Path \"D:\\\\bcorwebsite\" -Recurse -Filter \"*.env*\" -ErrorAction SilentlyContinue)",
       "Bash(Select-Object -ExpandProperty FullName)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "mcp__Claude_in_Chrome__tabs_context_mcp"
     ]
   }
 }

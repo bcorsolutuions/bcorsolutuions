@@ -101,3 +101,83 @@
 .dark .section-background::before {
   opacity: 0.05;
 }
+
+/* ── BCor Splash Hero animations ── */
+@keyframes bcor-blob1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+  }
+  25% {
+    transform: translate(60px, -80px) scale(1.12);
+    border-radius: 40% 60% 45% 55% / 60% 40% 55% 40%;
+  }
+  50% {
+    transform: translate(-40px, 60px) scale(0.92);
+    border-radius: 55% 45% 60% 40% / 40% 55% 60% 45%;
+  }
+  75% {
+    transform: translate(80px, 40px) scale(1.05);
+    border-radius: 45% 55% 40% 60% / 55% 45% 40% 60%;
+  }
+}
+@keyframes bcor-blob2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    border-radius: 40% 60% 50% 50% / 60% 40% 55% 45%;
+  }
+  25% {
+    transform: translate(-70px, 50px) scale(1.1);
+    border-radius: 55% 45% 40% 60% / 45% 55% 50% 50%;
+  }
+  50% {
+    transform: translate(50px, -70px) scale(0.9);
+    border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+  }
+  75% {
+    transform: translate(-30px, -40px) scale(1.08);
+    border-radius: 50% 50% 45% 55% / 40% 60% 55% 45%;
+  }
+}
+@keyframes bcor-blob3 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    border-radius: 50% 50% 60% 40% / 40% 50% 60% 50%;
+  }
+  33% {
+    transform: translate(40px, 60px) scale(1.15);
+    border-radius: 60% 40% 50% 50% / 55% 45% 50% 50%;
+  }
+  66% {
+    transform: translate(-60px, -30px) scale(0.88);
+    border-radius: 40% 60% 55% 45% / 60% 40% 45% 55%;
+  }
+}
+@keyframes bcor-blob4 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+    border-radius: 55% 45% 50% 50% / 50% 55% 45% 50%;
+  }
+  50% {
+    transform: translate(-50px, -60px) scale(1.1);
+    border-radius: 45% 55% 60% 40% / 60% 45% 55% 40%;
+  }
+}
+@keyframes bcor-ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes scroll-dot {
+  0%   { transform: translateY(0);   opacity: 1; }
+  60%  { transform: translateY(6px); opacity: 0.2; }
+  100% { transform: translateY(0);   opacity: 1; }
+}
+.bcor-scroll-dot { animation: scroll-dot 1.6s ease-in-out infinite; }
+
+.bcor-blob1 { animation: bcor-blob1 18s ease-in-out infinite; }
+.bcor-blob2 { animation: bcor-blob2 22s ease-in-out infinite; }
+.bcor-blob3 { animation: bcor-blob3 26s ease-in-out infinite; }
+.bcor-blob4 { animation: bcor-blob4 20s ease-in-out infinite; }
+.bcor-ticker-track { animation: bcor-ticker 35s linear infinite; }
+.bcor-ticker-track:hover { animation-play-state: paused; }
