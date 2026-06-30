@@ -151,25 +151,26 @@ export function HeroSection({ description }: HeroSectionProps) {
 
             {/* Stats */}
             <motion.div
-              className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-white/20"
+              className="grid grid-cols-4 gap-6 mt-10 pt-8 border-t border-white/20"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
             >
-              {/* {[
-                // { value: '500+', label: isRTL ? 'عميل' : 'Clients' },
-                // { value: '30+', label: isRTL ? 'دولة' : 'Countries' },
-                // { value: '98%', label: isRTL ? 'رضا العملاء' : 'Satisfaction' }
+              {[
+                { value: '150+', label: isRTL ? 'عميل مؤسسي' : 'Enterprise Clients' },
+                { value: '12',   label: isRTL ? 'وحدة ERP'    : 'ERP Modules'        },
+                { value: '99.9%',label: isRTL ? 'وقت تشغيل'  : 'Uptime SLA'         },
+                { value: '24/7', label: isRTL ? 'دعم فني'     : 'Support'            },
               ].map((stat, i) => (
                 <div key={i} className="text-center">
-                  <div className="text-2xl md:text-3xl font-bold text-[#D5A849] mb-1">
+                  <div className="text-xl md:text-2xl font-bold text-[#D5A849] mb-1">
                     {stat.value}
                   </div>
-                  <div className={cn("text-sm text-gray-400", isRTL && "font-cairo")}>
+                  <div className={cn("text-xs text-gray-400", isRTL && "font-cairo")}>
                     {stat.label}
                   </div>
                 </div>
-              ))} */}
+              ))}
             </motion.div>
           </motion.div>
 
@@ -182,6 +183,24 @@ export function HeroSection({ description }: HeroSectionProps) {
           >
             <div className="absolute -z-10 -top-10 -right-10 w-48 h-48 bg-[#D5A849]/20 rounded-full blur-3xl" />
             <div className="absolute -z-10 -bottom-10 -left-10 w-56 h-56 bg-blue-500/15 rounded-full blur-3xl" />
+
+            {/* Floating cards — bottom-right: New Order + Automation side by side */}
+            <motion.div
+              className="absolute -bottom-4 -right-4 z-20 flex items-center gap-2 pointer-events-none"
+              initial={{ opacity: 0, scale: 0.9, y: 10 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 1.2 }}
+            >
+              <div className="bg-[#1a2230] border border-white/10 rounded-xl px-3 py-2 shadow-xl">
+                <div className="text-white/50 text-[10px] mb-0.5">🚀 New Order</div>
+                <div className="text-green-400 font-bold text-xs">+$12,400 confirmed</div>
+              </div>
+              <div className="bg-[#1a2230] border border-white/10 rounded-xl px-3 py-2 shadow-xl">
+                <div className="text-white/50 text-[10px] mb-0.5">⚡ Automation</div>
+                <div className="font-bold text-xs" style={{ color: '#F5A623' }}>3 tasks completed</div>
+              </div>
+            </motion.div>
+
             <DashboardMockup />
           </motion.div>
         </div>
