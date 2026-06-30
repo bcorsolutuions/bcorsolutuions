@@ -149,29 +149,6 @@ export function HeroSection({ description }: HeroSectionProps) {
 
             </motion.div>
 
-            {/* Stats */}
-            <motion.div
-              className="grid grid-cols-4 gap-6 mt-10 pt-8 border-t border-white/20"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.7 }}
-            >
-              {[
-                { value: '150+', label: isRTL ? 'عميل مؤسسي' : 'Enterprise Clients' },
-                { value: '12',   label: isRTL ? 'وحدة ERP'    : 'ERP Modules'        },
-                { value: '99.9%',label: isRTL ? 'وقت تشغيل'  : 'Uptime SLA'         },
-                { value: '24/7', label: isRTL ? 'دعم فني'     : 'Support'            },
-              ].map((stat, i) => (
-                <div key={i} className="text-center">
-                  <div className="text-xl md:text-2xl font-bold text-[#D5A849] mb-1">
-                    {stat.value}
-                  </div>
-                  <div className={cn("text-xs text-gray-400", isRTL && "font-cairo")}>
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </motion.div>
           </motion.div>
 
           {/* Visual — Animated Dashboard */}
