@@ -1,36 +1,12 @@
-'use client';
+import type { Metadata } from 'next';
+import HomeClient from './client';
 
-import { useLanguage } from '@/lib/language-context';
-import { t } from '@/lib/translations';
-import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
-import { HeroSection } from '@/components/sections/hero-section';
-import { FeaturesSection } from '@/components/sections/features-section';
-import { SolutionsSection } from '@/components/sections/solutions-section';
-import { TestimonialsSection } from '@/components/sections/testimonials-section';
-import { CtaSection } from '@/components/sections/cta-section';
-import { GlanceSection } from '@/components/sections/glance-section';
-import { ImplementationSection } from '@/components/sections/implementation-section';
-import { ClientsSection } from '@/components/sections/clients-section';
+export const metadata: Metadata = {
+  title: 'BCor Solutions | Enterprise ERP Software',
+  description:
+    'Complete ERP software for finance, HR, inventory, trading, manufacturing, and more. Trusted by 150+ enterprises across the Middle East.',
+};
 
-export default function Home() {
-  const { language, isRTL } = useLanguage();
-
-  return (
-    <div className={cn("min-h-screen", isRTL ? "font-cairo" : "")}>
-      <HeroSection
-        description={{
-          en: 'Unlock seamless efficiency and innovation across diverse industries with BCor Solutions—an all-in-one ERP software tailored for comprehensive management of HR, fixed assets, trading, manufacturing, and beyond.',
-          ar: 'أطلق العنان للكفاءة والابتكار عبر مختلف القطاعات مع حلول بي كور—برنامج ERP متكامل مصمم لإدارة شاملة للموارد البشرية والأصول الثابتة والتجارة والتصنيع والمزيد.'
-        }}
-      />
-      <GlanceSection />
-      <FeaturesSection />
-      <SolutionsSection />
-      <ClientsSection />
-      <ImplementationSection />
-      <TestimonialsSection />
-      <CtaSection />
-    </div>
-  );
+export default function HomePage() {
+  return <HomeClient />;
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useLanguage } from '@/lib/language-context';
 import { DashboardMockup } from '@/components/ui/dashboard-mockup';
 import { t } from '@/lib/translations';
@@ -16,16 +16,7 @@ interface HeroSectionProps {
 
 export function HeroSection({ description }: HeroSectionProps) {
   const { language, isRTL } = useLanguage();
-  const [mounted, setMounted] = useState(false);
   const [demoOpen, setDemoOpen] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
 
   const features = [
     {

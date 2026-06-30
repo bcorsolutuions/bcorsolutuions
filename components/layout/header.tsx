@@ -110,7 +110,7 @@ export function Header() {
             <NavigationMenu>
               <NavigationMenuList>
                 {navItems.map((item) => (
-                  <NavigationMenuItem key={item.key}>
+                  <NavigationMenuItem key={item.key} className={item.key === 'nav.contact' ? 'ml-6' : ''}>
                     {item.items ? (
                       <>
                         <NavigationMenuTrigger className={cn(
@@ -230,7 +230,7 @@ export function Header() {
         <div className="md:hidden py-4 px-4 bg-background border-b">
           <nav className="flex flex-col space-y-4">
             {navItems.map((item) => (
-              <div key={item.key}>
+              <div key={item.key} className={item.key === 'nav.contact' ? 'mt-4' : ''}>
                 {item.items ? (
                   <div className="space-y-2">
                     <div className={cn(
